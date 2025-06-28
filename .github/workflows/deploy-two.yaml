@@ -18,4 +18,14 @@ jobs:
     steps:
       - name: Hola Mundo
         run: echo "Aca va"
+      - run: echo "Vamos a usar un contexto para saber desde que rama se hizo push ${{ github.ref	 }}"
+
+
+  third_jobs:
+    name: Job que utilliza una acción de Github
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Acción para saber el directorio de trabajo
+        uses: actions/checkout@v4
 
