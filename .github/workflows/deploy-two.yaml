@@ -26,6 +26,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Acción para saber el directorio de trabajo
+      - name: working dir
+        run: ls -al
+
+      - name: Acción posiciona el workflow en el proyecto actual
         uses: actions/checkout@v4
+
+      - name: working dir after action
+        run: ls -al
 
