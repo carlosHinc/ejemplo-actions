@@ -49,5 +49,5 @@ jobs:
       - name: Subir artefacto
         uses: actions/upload-artifact@v4
         with:
-          name: archivo-test
+          name: archivo-test-2
           path: test-nuevo.log
