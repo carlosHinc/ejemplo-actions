@@ -25,10 +25,6 @@ jobs:
     needs: first_job
 
     steps:
-     - name: Descargar artefacto
-       uses: actions/download-artifact@v4
-       with:
-        name: archivo-test
-
+     
      - name: Cat file new 2
        run: cat test.log
