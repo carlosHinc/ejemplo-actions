@@ -1,7 +1,9 @@
 name: Deploy Codigo Facilito
 on:
   push:
-    branches: main
+    branches:
+      - main
+      - master
 
 jobs:
   deploy:
@@ -11,3 +13,4 @@ jobs:
       - run: echo "Correr migracionesX"
       - run: echo "Generar binario"
       - run: echo "Publicar versión"
+      - run: echo "Vamos a usar un contexto para saber desde que rama se hizo push ${{ github.ref	 }}"
