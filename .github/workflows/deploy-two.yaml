@@ -4,6 +4,7 @@ on: push
 
 jobs: 
   first_jobs:
+    name: Nombre personalizado para ver en el dashboard de Github
     runs-on: ubuntu-latest
 
     steps:
